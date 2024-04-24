@@ -1,0 +1,106 @@
+
+
+.Container{
+   
+    width: 100%;
+    height: 185px;
+    background-color: rgb(15, 15, 15);
+    margin-top: 8%;
+    
+
+}
+
+.Titulo, .TituloCard, .Preco, .Parcelamento {
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+.Titulo{
+    
+    text-align: center;
+    padding-top: 6%;
+    color: #fb6a31;
+   font-size: 28.5px;
+}
+
+.ContainerCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8%;
+    
+    
+   
+}
+
+.CardLaranja{
+ width: 86%;
+ height: 190px;
+ background-color: #fb6a31;
+
+ z-index: 1;
+ 
+}
+
+.CardCinza{
+    width: 86%;
+    height: 235px;
+    background-color: rgb(51, 51, 51);
+  
+    padding: 5%;
+    
+   }
+
+   .imagemCard{
+    z-index: 2;
+    width: 95%;
+   }
+
+   .TituloCard{
+    font-size: 23px;
+    font-weight: 690;
+    color: #fb6a31;
+    margin-top: 18%;
+   }
+   
+   .Preco{
+    font-size: 28px;
+    color: #FFF;
+    font-weight: 790;
+     margin-top: 2%;
+   }
+
+   .Parcelamento{
+    font-size: 18px;
+    color: #FFF;
+    margin-top: 1%;
+    
+}
+
+.btnCompra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    height: 35px;
+    margin-top: 2%;
+    background-color: #fb6a31;
+    color: #FFF;
+    font-weight: 780;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.btnCompra:hover{
+   
+    background-color: rgb(15, 15, 15);
+    color:  #fb6a31;
+    transition: ease-in-out 480ms;
+    
+}
+
+  

@@ -1,0 +1,93 @@
+.Container{
+    margin-top: 5%;
+    
+}
+
+
+.Titulo{
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    
+    color: #fb6a31;
+   font-size: 28.5px;
+}
+
+.Informacoes{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 4%;
+    text-align: center;
+    color: rgb(15, 15, 15);
+}
+
+
+.Carrosel{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    
+  
+    margin-top: 8%;
+   
+}
+
+.ContainerCarrosel{
+  
+    width: 100%;
+    
+    
+}
+
+.imagens{
+    width: 100%;
+    height: 315px;
+    
+}
+.Nome, .Preco, .Parcelamento, .btnCompra{
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+.Nome{
+    font-size: 22px;
+    color: #fb6a31;
+    margin-top: 2%;
+}
+
+.Preco{
+    
+    font-weight: 790;
+     margin-top: 2%;
+    font-size: 28px;
+    color: rgb(15, 15, 15);
+}
+
+.Parcelamento{
+    font-size: 18px;
+    margin-top: 1%;
+    color: rgb(15, 15, 15);
+}
+
+.btnCompra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    height: 35px;
+    margin-top: 2%;
+    background-color: #fb6a31;
+    color: #FFF;
+    font-weight: 780;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.btnCompra:hover{
+   
+    background-color: rgb(15, 15, 15);
+    color:  #fb6a31;
+    transition: ease-in-out 480ms;
+    
+}
