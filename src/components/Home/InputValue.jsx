@@ -15,7 +15,9 @@ export default function InputValue({termoPesquisa})
          <h1 className={styleInput.Titulo}>Nossas Lojas</h1>
          <div className={styleInput.Container2}>
          <input onBlur={pegarValor} className={styleInput.input} type="text" placeholder="Encontre uma loja" />
-         <FaSearch className={styleInput.btn}></FaSearch>
+         <button className={styleInput.btn}>
+         <FaSearch ></FaSearch>
+            </button>
          </div>
       
          </div>

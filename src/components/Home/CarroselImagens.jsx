@@ -32,7 +32,7 @@ export default function CarroselImagens() {
         {arrayImagens.map((dado) => {
           return (
             <SwiperSlide key={dado.id}>
-              <div>
+              <div className={styleCarrosel.Container}>
                 <img
                   className={styleCarrosel.Imagens}
                   src={dado.imagem}

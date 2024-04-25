@@ -1,6 +1,6 @@
 import styleLojas from "../styles/Lojas.module.css";
-import InputValue from "./InputValue";
-import { useState } from "react";
+
+import MensagemErro from "./MensagemErro";
 
 export default function Lojas({ filtrarTermo }) {
   const listaLojas = [
@@ -62,24 +62,17 @@ export default function Lojas({ filtrarTermo }) {
     },
   ];
 
-
   const filtro = listaLojas.filter((item) => {
-    return(item.unidade.toLowerCase().includes(filtrarTermo.toLowerCase())) 
+    return item.unidade.toLowerCase().includes(filtrarTermo.toLowerCase());
   });
 
   return (
     <>
-      <div className={styleLojas.Container}>
-     
+      <div className={styleLojas.Container}></div>
 
-   
-
-
-      </div>
-      
-      
       {filtro.map((item) => {
         return (
+          
           <div className={styleLojas.Containers} key={item.id}>
             <div className={styleLojas.cardContainer}>
               <h1 className={styleLojas.TituloCard}>{item.unidade}</h1>
@@ -91,6 +84,10 @@ export default function Lojas({ filtrarTermo }) {
           </div>
         );
       })}
+
+      {
+        filtro.length === 0 ? <MensagemErro/> :  ''
+      }
     </>
   );
 }

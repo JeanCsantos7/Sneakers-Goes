@@ -60,8 +60,8 @@ input {
 .circulo {
   cursor: pointer;
     position: absolute;
-  right: 14.5%;
-  top: 7%;
+  right: 14.7%;
+  top: 7.2%;
   width: 6%;
   height: 22px;
   border-radius: 80px;
@@ -81,4 +81,75 @@ input {
   .Links {
     display: none;
   }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1920px){
+ 
+ 
+  .Container {
+ 
+    height: 175px;
+  
+  }
+ 
+ 
+  .nav {
+  
+    gap: 2%;
+    padding: 0.5%;
+  }
+
+  
+.Links {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+.Links:hover {
+  color: #fFF;
+  border-bottom: 2px solid #fb6a31;
+  transition: 450ms ease-in-out;
+}
+  
+  .Logotipo {
+    width: 8%;
+  }
+
+  input {
+    width: 425px;
+    height: 35px;
+   
+  }
+
+  .btnPesquisa {
+
+    height: 35px;
+
+  }
+  
+  .iconePesquisa {
+    font-size: 14.5px;
+    
+  }
+
+  .CarrinhoCompra {
+  
+    font-size: 35px;
+    margin-right: 5%;
+  }
+
+
+  .circulo {
+  
+
+    right: 4.4%;
+    top: 9.2%;
+    width: 30px;
+    height: 30px;
+    border-radius: 89px;
+   
+  
+  }
+
+
 }

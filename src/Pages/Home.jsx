@@ -7,6 +7,7 @@ import Drop from "../components/Home/Drop";
 import Lojas from "../components/Home/Lojas";
 import InputValue from "../components/Home/InputValue";
 import { useState } from "react";
+import Footer from "../components/Home/Footer";
 
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
       <Drop filtrarTermo={prop}></Drop>
       <InputValue termoPesquisa={ReceberDados2}></InputValue>
       <Lojas filtrarTermo={prop2}></Lojas>
+      <Footer></Footer>
     
     </>
   );

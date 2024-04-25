@@ -1,0 +1,80 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(15, 15, 15);
+  height: 200px;
+  margin-top: 7%;
+}
+
+.Titulo,
+.Informações,
+.btn, 
+.input
+{
+  font-family: "Rubik", sans-serif;
+}
+.Titulo {
+  padding-top: 6%;
+  padding: 2.5%;
+  text-align: center;
+  color: #fb6a31;
+  font-size: 28.5px;
+}
+
+.Informações {
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  padding: 2%;
+}
+
+.ContainerInput{
+    display: flex;
+    margin-top: 3%;
+}
+
+.input{
+    width: 245px;
+    height: 35px;
+    border: none;
+}
+
+.btn{
+ background-color: #fb6a31;
+ color: #FFF;
+ padding: 3%;
+ outline: none;
+ border: none;
+ cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #f7946d;
+    transition: 450 ms ease-in-out;
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1920px){
+
+  .Container{
+    margin-top: 5%;
+    height: 286px;
+  }
+
+  .Titulo{
+    padding-top: 3%;
+    padding: 1.5%;
+  }
+
+  .Informações {
+    
+    padding: 0.7%;
+  }
+
+  .ContainerInput{
+    display: flex;
+    margin-top: 1%;
+}
+}

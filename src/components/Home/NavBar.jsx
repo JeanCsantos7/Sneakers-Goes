@@ -17,6 +17,9 @@ import MenuMobile from "./MenuMobile";
 export default function NavBar({ termoPesquisa }) {
   const [toggle, setToggle] = useState(false);
   const [alternar, setAlternar] = useState("");
+ 
+
+ 
 
 
   function alternarEstados() {
@@ -27,7 +30,11 @@ export default function NavBar({ termoPesquisa }) {
   function exportarDado(e) {
     const valorDigitado = e.target.value;
     termoPesquisa(valorDigitado);
+   
+ 
   }
+
+  
 
 
 
@@ -59,8 +66,11 @@ export default function NavBar({ termoPesquisa }) {
               onBlur={exportarDado}
               type="text"
               placeholder="O que você procura?"
+          
+              
+           
             />
-            <button   className={NavbarStyle.btnPesquisa}>
+            <button className={NavbarStyle.btnPesquisa}>
               <FaSearch className={NavbarStyle.iconePesquisa} />
             </button>
           </span>

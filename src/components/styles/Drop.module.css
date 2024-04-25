@@ -103,4 +103,61 @@
     
 }
 
+@media screen and (min-width: 1280px) and (max-width: 1920px){
+
+    .Container{
+   
+       
+       margin: 0 auto;
+        margin-top: 3.5%;
+        width: 95%;
+        
+    
+    }
+
+    .ContainerCard{
+       
+        margin-top: 2%;
+        
+        
+       
+    }
+
+    .CardLaranja{
+        width: 40%;
+        height: 205px;
+     
+       
+     
+        
+       }
+
+       .CardCinza{
+        width: 40%;
+        height: 365px;
+        padding: 6.7%;
+        
+       }
+
+     
+       .TituloCard{
+       
+        margin-top: 28%;
+       }
+     
+    
+       .Parcelamento{
+        font-size: 18px;
+        color: #FFF;
+        margin-top: 1%;
+        
+    }
+    
+    .btnCompra{
+      
+        margin-top: 4.5%;
+    
+    }
+
+}
   

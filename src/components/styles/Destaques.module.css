@@ -91,3 +91,35 @@
     transition: ease-in-out 480ms;
     
 }
+
+
+
+@media screen and (min-width: 1280px) and (max-width: 1920px){
+    .Container{
+        margin-top: 2%;
+        
+    }
+
+    .Informacoes{
+        
+        margin-top: 1%;
+    
+    }
+
+    .Carrosel{
+        margin: 0 auto;
+        width: 35%;
+      
+        
+      
+        margin-top: 5.5%;
+       
+    }
+
+    .imagens{
+        width: 95%;
+        height: 415px;
+        
+    }
+
+}
