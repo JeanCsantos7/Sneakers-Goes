@@ -1,3 +1,4 @@
+
  <h1 style="text-align: center;">
       <h1 style="text-align: center;">
            <img width= "23%" src="./Logotipo.png" alt="">
@@ -12,8 +13,8 @@
  Bem-vindo(a) ao projeto Sneakers Goes Este é um projeto que representa uma loja de tênis ficticia, por ser um apaixonado em sneakers, especialmente air jordan mesclei as habilidades em design e desenvolvimento para elaborar essa aplicação.</p>
 
 
-
-<a href="https://projeto-churrascaria-beta.vercel.app/">Acesse aqui o Projeto</a>
+![image](https://github.com/JeanCsantos7/Sneakers-Goes/assets/126731254/7c82f719-1e69-4188-9d95-17d3ac9316a4)
+<a href="https://sneakers-goes.vercel.app/">Acesse aqui o Projeto</a>
 
 ## ⚙ Instalação
 
@@ -42,3 +43,6 @@ React Router Dom
 Swiper
 
 React Icons
+
+
+
