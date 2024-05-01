@@ -19,7 +19,7 @@
 ## ⚙ Instalação
 
     1 - git clone https://github.com/JeanCsantos7/Sneakers-Goes
-    2-  cd Projeto_Churrascaria
+    2-  cd Sneakers-Goes
     3-  npm install
     4-  npm run dev
     5 - rodar o local  http://localhost:5173/
