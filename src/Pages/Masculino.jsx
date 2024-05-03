@@ -1,12 +1,12 @@
 
-
+import Navbar from "../components/Home/NavBar"
 
 export default function Masculino(){
 
     return(
 
         <>
-         <p>jejeje</p>
+<Navbar></Navbar>
         </>
     )
 }

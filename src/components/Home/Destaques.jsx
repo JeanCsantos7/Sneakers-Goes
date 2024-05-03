@@ -1,7 +1,7 @@
 import MensagemErro from "./MensagemErro";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useContext } from "react";
+
 
 import "swiper/css";
 import "swiper/css/navigation";

@@ -24,6 +24,8 @@ export default function Rotas(){
 
       <Route path="/" element={<Home/>}></Route>
       <Route path="/Masculino" element={<Masculino/>}></Route>
+      <Route path="/Feminino" element={<Feminino/>}></Route>
+      <Route path="/Infantil" element={<Infantil/>}></Route>
       <Route path="/Infantil" element={<Infantil/>}></Route>
       <Route path="/Feminino" element={<Feminino/>}></Route>
       <Route path="/Jordan" element={<Jordan/>}></Route>

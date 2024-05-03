@@ -1,0 +1,40 @@
+
+.Container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    gap: 8%;
+}
+
+
+
+
+
+.Titulo{
+    font-family: "Rubik", sans-serif;
+    font-size: 28.5px;
+    margin-top: 5%;
+    text-align: center;
+    color: #fb6a31;
+  
+}
+
+.Informacoes{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    color: rgb(15, 15, 15);
+}
+
+.TituloQuantia{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-top: 2%;
+    color: rgb(15, 15, 15);
+}

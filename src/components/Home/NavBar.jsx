@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import NavbarStyle from "../styles/Navbar.module.css";
 import Logotipo from "../assets/Logotipo.png";
 import { FaSearch } from "react-icons/fa";
@@ -46,18 +46,23 @@ export default function NavBar({ termoPesquisa }) {
    <>
 
       <div className={NavbarStyle.Container}>
+        
+    
         <nav className={NavbarStyle.nav}>
-          <img className={NavbarStyle.Logotipo} src={Logotipo} alt="" />
-
-          <Link className={NavbarStyle.Links} to={"Novidades"}>
-            Novidades
+       <Link to={"/"}>
+       <img className={NavbarStyle.Logotipo} src={Logotipo} alt="" />
+       </Link>
+   
+          <Link className={NavbarStyle.Links} to={"/Masculino"}>
+         
+            Masculino
           </Link>
 
-          <Link className={NavbarStyle.Links} to={"Feminino"}>
+          <Link className={NavbarStyle.Links} to={"/Feminino"}>
             Feminino
           </Link>
 
-          <Link className={NavbarStyle.Links} to={"Infantil"}>
+          <Link className={NavbarStyle.Links} to={"/Infantil"}>
             Infantil
           </Link>
 
