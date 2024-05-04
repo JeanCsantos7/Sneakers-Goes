@@ -1,4 +1,4 @@
-import Navbar from "../components/Home/NavBar";
+import NavBarV2 from "../components/Home/NavBar v2";
 import OutrosCards from "../components/Adidas/OutrosCards";
 import { useState } from "react";
 import styleAdidas from "../components/styles/Adidas.module.css";
@@ -32,7 +32,7 @@ export default function Adidas() {
 
   return (
     <>
-      <Navbar></Navbar>
+      <NavBarV2></NavBarV2>
       
 
       <h1 className={styleAdidas.Titulo}>Adidas</h1>

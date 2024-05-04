@@ -1,4 +1,4 @@
-import Navbar from "../components/Home/NavBar";
+import NavBarV2 from "../components/Home/NavBar v2";
 import styleNike from "../components/styles/Nike.module.css";
 import OutrosCardsNike from "../components/Nike/OutrosCardsNike";
 import { useState } from "react";
@@ -37,7 +37,7 @@ export default function Nike() {
 
   return (
     <>
-      <Navbar></Navbar>
+     <NavBarV2></NavBarV2>
 
       <h1 className={styleNike.Titulo}>Nike</h1>
 

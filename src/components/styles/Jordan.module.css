@@ -38,3 +38,112 @@
     margin-top: 2%;
     color: rgb(15, 15, 15);
 }
+
+
+.ContainerCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+  
+}
+
+
+
+
+.ContainerCard:hover{
+ 
+   border: 2px solid #fb6a31;
+   transition-duration:  250ms;
+   border-radius: 9px;
+}
+
+.imagemCard{
+    width: 75%;
+ 
+}
+
+.Nome, .Preco, .Parcelamento, .btnCompra, .TituloVisualizados{
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+}
+
+.Nome{
+    
+  
+    font-size: 20px;
+    color: #fb6a31;
+    margin-top: 2%;
+}
+
+.TituloVisualizados{
+    font-size: 15px;
+    color: rgb(15, 15, 15);
+    margin-top: 1.5%;
+}
+
+.VerMais{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fff;
+    width: 155px;
+    height: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+    .Container{
+
+      flex-direction: column;
+
+    }
+    
+    
+    
+    .Titulo{
+        font-family: "Rubik", sans-serif;
+        font-size: 26.5px;
+        margin-top: 5%;
+        text-align: center;
+        color: #fb6a31;
+      
+    }
+    
+    .Informacoes{
+       
+        font-size: 17px;
+        width: 85%;
+      
+    }
+
+    .TituloQuantia{
+    
+       
+        margin-top: 15%;
+       
+    }
+
+    .TituloVisualizados{
+        font-size: 20px;
+      
+    }
+    
+    .VerMais{
+        font-size: 17px;
+        margin-top: 2.8%;
+        
+    }
+    
+
+    
+
+}

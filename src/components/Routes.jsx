@@ -7,7 +7,7 @@ import Infantil from "../Pages/Infantil";
 import Nike from "../Pages/Nike";
 import Jordan from "../Pages/Jordan";
 import Adidas from "../Pages/Adidas";
-import Puma from "../Pages/Puma";
+
 
 
 import Error from "../Pages/Error";
@@ -26,13 +26,10 @@ export default function Rotas(){
       <Route path="/Masculino" element={<Masculino/>}></Route>
       <Route path="/Feminino" element={<Feminino/>}></Route>
       <Route path="/Infantil" element={<Infantil/>}></Route>
-      <Route path="/Infantil" element={<Infantil/>}></Route>
       <Route path="/Feminino" element={<Feminino/>}></Route>
       <Route path="/Jordan" element={<Jordan/>}></Route>
       <Route path="/Nike" element={<Nike/>}></Route>
       <Route path="/Adidas" element={<Adidas/>}></Route>
-      <Route path="/Puma" element={<Puma/>}></Route>
-    
       <Route path="*" element={<Error/>}></Route>
 
      </Routes>

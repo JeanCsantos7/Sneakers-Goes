@@ -4,8 +4,6 @@ import styleMarcas from "../styles/Marcas.module.css"
 import { SiJordan } from "react-icons/si";
 import { CgAdidas } from "react-icons/cg";
 import { SiNike } from "react-icons/si";
-
-import { SiPuma } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 
@@ -32,9 +30,7 @@ export default function Marcas(){
             <CgAdidas className={styleMarcas.LogoMarca}></CgAdidas>
             </Link>
 
-            <Link to={'Puma'}>
-            <SiPuma className={styleMarcas.LogoMarca}></SiPuma>
-            </Link>
+         
          </span>
          
         
