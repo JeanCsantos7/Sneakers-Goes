@@ -13,7 +13,8 @@
  Bem-vindo(a) ao projeto Sneakers Goes Este é um projeto que representa uma loja de tênis ficticia, por ser um apaixonado em sneakers, especialmente air jordan mesclei as habilidades em design e desenvolvimento para elaborar essa aplicação.</p>
 
 
-![image](https://github.com/JeanCsantos7/Sneakers-Goes/assets/126731254/7c82f719-1e69-4188-9d95-17d3ac9316a4)
+![image](https://github.com/JeanCsantos7/Sneakers-Goes/assets/126731254/9b14f326-4b89-4f52-8259-710491a62826)
+
 <a href="https://sneakers-goes.vercel.app/">Acesse aqui o Projeto</a>
 
 ## ⚙ Instalação
