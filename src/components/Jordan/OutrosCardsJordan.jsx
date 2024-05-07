@@ -59,7 +59,7 @@ export default function OutrosCardsJordan() {
         <div className={styleJordan.ContainerCard}>
           <img className={styleJordan.imagemCard} src={Tenis24} alt="" />
           <h1 className={styleJordan.Nome}>JORDAN MAX AURA 5</h1>
-          <h2 className={styleJordan.Preco}>R$  899,99</h2>
+          <h2 className={styleJordan.Preco}>R$ 899,99</h2>
           <p className={styleJordan.Parcelamento}>10x R$ 89,99</p>
         </div>
       </div>
@@ -97,7 +97,9 @@ export default function OutrosCardsJordan() {
 
         <div className={styleJordan.ContainerCard}>
           <img className={styleJordan.imagemCard} src={Tenis29} alt="" />
-          <h1 className={styleJordan.Nome}>Air Jordan 4 Retro WMNS Oil Green Seafoam</h1>
+          <h1 className={styleJordan.Nome}>
+            Air Jordan 4 Retro WMNS Oil Green Seafoam
+          </h1>
           <h2 className={styleJordan.Preco}>R$ 749,90</h2>
           <p className={styleJordan.Parcelamento}>4x R$ 187,47</p>
         </div>
@@ -127,13 +129,11 @@ export default function OutrosCardsJordan() {
 
         <div className={styleJordan.ContainerCard}>
           <img className={styleJordan.imagemCard} src={Tenis33} alt="" />
-          <h1 className={styleJordan.Nome}>JORDAN  6 </h1>
+          <h1 className={styleJordan.Nome}>JORDAN 6 </h1>
           <h2 className={styleJordan.Preco}>R$ 999,99</h2>
           <p className={styleJordan.Parcelamento}>10x R$ 99,99</p>
         </div>
       </div>
-
-      
     </>
   );
 }

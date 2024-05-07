@@ -1,26 +1,15 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
-import NavbarStyle from "../styles/Navbar.module.css";
-import Logotipo from "../assets/Logotipo.png";
+import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { BsFillCartFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MenuMobile from "./MenuMobile";
+import NavbarStyle from "../styles/Navbar.module.css";
+import Logotipo from "../assets/Logotipo.png";
 
-
-
-
-
-
-
-
-export default function NavBar({ termoPesquisa }) {
+export default function NavBar({ termoPesquisa, numeroCliques }) {
   const [toggle, setToggle] = useState(false);
   const [alternar, setAlternar] = useState("");
- 
-
- 
-
 
   function alternarEstados() {
     setToggle(!toggle);
@@ -30,31 +19,17 @@ export default function NavBar({ termoPesquisa }) {
   function exportarDado(e) {
     const valorDigitado = e.target.value;
     termoPesquisa(valorDigitado);
-   
- 
   }
 
-  
-
-
-
- 
   return (
-  
-
-   
-   <>
-
+    <>
       <div className={NavbarStyle.Container}>
-        
-    
         <nav className={NavbarStyle.nav}>
-       <Link to={"/"}>
-       <img className={NavbarStyle.Logotipo} src={Logotipo} alt="" />
-       </Link>
-   
+          <Link to={"/"}>
+            <img className={NavbarStyle.Logotipo} src={Logotipo} alt="" />
+          </Link>
+
           <Link className={NavbarStyle.Links} to={"/Masculino"}>
-         
             Masculino
           </Link>
 
@@ -71,9 +46,6 @@ export default function NavBar({ termoPesquisa }) {
               onBlur={exportarDado}
               type="text"
               placeholder="O que você procura?"
-          
-              
-           
             />
             <button className={NavbarStyle.btnPesquisa}>
               <FaSearch className={NavbarStyle.iconePesquisa} />
@@ -81,8 +53,9 @@ export default function NavBar({ termoPesquisa }) {
           </span>
 
           <BsFillCartFill className={NavbarStyle.CarrinhoCompra} />
+
           <div className={NavbarStyle.circulo}>
-      
+            <p className={NavbarStyle.numeroCliques}>{numeroCliques}</p>
           </div>
 
           <GiHamburgerMenu

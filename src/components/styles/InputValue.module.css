@@ -1,87 +1,65 @@
-
-.Container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2%;
-    margin-top: 95%;
-
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-top: 95%;
 }
 
-
-
-.Container2{
-    display: flex;
-    align-items: center;
+.Container2 {
+  display: flex;
+  align-items: center;
 }
 
-.Titulo{
-    font-family: "Rubik", sans-serif;
+.Titulo {
+  font-family: "Rubik", sans-serif;
 }
 
-
-.Titulo{
-   
-    
-    padding-top: 6%;
-    padding: 5%;
-    text-align: center;
-    color: #fb6a31;
-   font-size: 28.5px;
+.Titulo {
+  padding-top: 6%;
+  padding: 5%;
+  text-align: center;
+  color: #fb6a31;
+  font-size: 28.5px;
 }
-.input{
-    
-    width: 280px;
-    height: 35px;
-    margin-top: 3%;
-    outline: none;
-    border: 0.2px solid rgb(33, 33, 33);
-    
-   
-}
-
-.btn{
- 
-   width: 32px;
+.input {
+  width: 280px;
   height: 35px;
   margin-top: 3%;
-border: none;
-background-color: #fb6a31;
-color: #FFF;
-cursor: pointer;
+  outline: none;
+  border: 0.2px solid rgb(33, 33, 33);
+  z-index: 2;
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1920px){
-    .Container{
-      
-        margin-top: 37%;
-     
-    
-    }
-    .Titulo{
-   
-    
-        padding-top: 2%;
-        padding: 2%;
-    
-    }
-
-    .input{
-        width: 400px;
-        border: 0.1px solid rgb(33, 33, 33);
-       
-
-        
-       
-    }
-
-    .btn{
- 
-   width: 65px;
-   border-radius: 1.7px;
-   font-size: 20px;
-
+.btn {
+  width: 32px;
+  height: 35px;
+  margin-top: 3%;
+  border: none;
+  background-color: #fb6a31;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0px;
 }
-   
+
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  .Container {
+    margin-top: 37%;
+  }
+  .Titulo {
+    padding-top: 2%;
+    padding: 2%;
+  }
+
+  .input {
+    width: 400px;
+    border: 0.1px solid rgb(33, 33, 33);
+  }
+
+  .btn {
+    width: 65px;
+    border-radius: 1.7px;
+    font-size: 20px;
+  }
 }

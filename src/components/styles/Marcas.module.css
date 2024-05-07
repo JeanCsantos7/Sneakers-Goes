@@ -1,58 +1,47 @@
-
-.Container{
-    
-    margin-top: 20%;
-    
+.Container {
+  margin-top: 20%;
 }
 
-
-.Titulo{
-    font-family: "Rubik", sans-serif;
-    text-align: center;
-    color: #fb6a31;
-   font-size: 28.5px;
+.Titulo {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  color: #fb6a31;
+  font-size: 28.5px;
 }
 
-.ContainerMarca{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8%;
-    margin-top: 8%;
-    padding: 5%;
+.ContainerMarca {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  margin-top: 8%;
+  padding: 5%;
 }
 
-
-
-.LogoMarca{
-    font-size: 72px;
-    text-align: center;
-    margin: 0 auto;
-    padding: 11%;
-    background-color: rgb(15, 15, 15);
-    color: #fb6a31;
-    border-radius: 90px;
+.LogoMarca {
+  font-size: 72px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 11%;
+  background-color: rgb(15, 15, 15);
+  color: #fb6a31;
+  border-radius: 90px;
 }
 
-.LogoMarca:hover{
-    background-color: #fb6a31;
-    transition: ease-in-out 480ms;
-    color: rgb(15, 15, 15);
+.LogoMarca:hover {
+  background-color: #fb6a31;
+  transition: ease-in-out 480ms;
+  color: rgb(15, 15, 15);
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1920px){
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  .Container {
+    margin-top: 7%;
+  }
 
-    .Container{
-    
-        margin-top: 7%;
-        
-    }
-
-    .ContainerMarca{
-        
-        margin-top: 1%;
-        padding: 3%;
-        gap: 3.5%;
-    }
-
+  .ContainerMarca {
+    margin-top: 1%;
+    padding: 3%;
+    gap: 3.5%;
+  }
 }

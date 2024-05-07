@@ -5,20 +5,9 @@ import Logotipo from "../assets/Logotipo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MenuMobile from "./MenuMobile";
 
-
-
-
-
-
-
-
 export default function NavBarV2({ termoPesquisa }) {
   const [toggle, setToggle] = useState(false);
   const [alternar, setAlternar] = useState("");
- 
-
- 
-
 
   function alternarEstados() {
     setToggle(!toggle);
@@ -28,31 +17,17 @@ export default function NavBarV2({ termoPesquisa }) {
   function exportarDado(e) {
     const valorDigitado = e.target.value;
     termoPesquisa(valorDigitado);
-   
- 
   }
 
-  
-
-
-
- 
   return (
-  
-
-   
-   <>
-
+    <>
       <div className={NavbarStyleV2.Container}>
-        
-    
         <nav className={NavbarStyleV2.nav}>
-       <Link to={"/"}>
-       <img className={NavbarStyleV2.Logotipo} src={Logotipo} alt="" />
-       </Link>
-   
+          <Link to={"/"}>
+            <img className={NavbarStyleV2.Logotipo} src={Logotipo} alt="" />
+          </Link>
+
           <Link className={NavbarStyleV2.Links} to={"/Masculino"}>
-         
             Masculino
           </Link>
 
@@ -63,7 +38,7 @@ export default function NavBarV2({ termoPesquisa }) {
           <Link className={NavbarStyleV2.Links} to={"/Infantil"}>
             Infantil
           </Link>
-         
+
           <GiHamburgerMenu
             onClick={alternarEstados}
             className={NavbarStyleV2.MenuMobile}

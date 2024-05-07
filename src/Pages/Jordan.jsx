@@ -22,22 +22,22 @@ import Tenis17 from "../components/assets/TÊNIS JORDAN SPIZIKE LOW CNY MASCULIN
 import Tenis18 from "../components/assets/TÊNIS JORDAN DOGGFATHER.webp";
 
 export default function Jordan() {
-  
-  const[toggle, setToggle] = useState(true)
-  const[renderizar, setRenderizar] = useState('')
-  const[textoBtn, setTexto] = useState('Ver Mais')
-  const[textoVisualizacao, setTextoVisualizacao] = useState('Você viu 18 de 33 produtos')
-  
-  function mostrarCards()
-  {
+  const [toggle, setToggle] = useState(true);
+  const [renderizar, setRenderizar] = useState("");
+  const [textoBtn, setTexto] = useState("Ver Mais");
+  const [textoVisualizacao, setTextoVisualizacao] = useState(
+    "Você viu 18 de 33 produtos"
+  );
 
-    setToggle(!toggle)
-    setRenderizar(toggle ? <OutrosCardsJordan/> : '')
-    setTexto(toggle ? 'Ver Menos'  :  'Ver Mais')
-    setTextoVisualizacao(toggle ? 'Você viu 33 de 33 produtos'  :  'Você viu 18 de 33 produtos')
+  function mostrarCards() {
+    setToggle(!toggle);
+    setRenderizar(toggle ? <OutrosCardsJordan /> : "");
+    setTexto(toggle ? "Ver Menos" : "Ver Mais");
+    setTextoVisualizacao(
+      toggle ? "Você viu 33 de 33 produtos" : "Você viu 18 de 33 produtos"
+    );
   }
-  
-  
+
   return (
     <>
       <NavBarV2></NavBarV2>
@@ -143,8 +143,6 @@ export default function Jordan() {
         </div>
       </div>
 
-
-
       <div className={styleJordan.Container}>
         <div className={styleJordan.ContainerCard}>
           <img className={styleJordan.imagemCard} src={Tenis13} alt="" />
@@ -192,7 +190,9 @@ export default function Jordan() {
       </div>
 
       <h3 className={styleJordan.TituloVisualizados}>{textoVisualizacao}</h3>
-      <button onClick={mostrarCards} className={styleJordan.VerMais}>{textoBtn} </button>
+      <button onClick={mostrarCards} className={styleJordan.VerMais}>
+        {textoBtn}{" "}
+      </button>
       <p>{renderizar}</p>
     </>
   );

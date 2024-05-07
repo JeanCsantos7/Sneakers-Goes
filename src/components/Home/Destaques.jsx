@@ -2,7 +2,6 @@ import MensagemErro from "./MensagemErro";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -18,8 +17,7 @@ import Yeezy500 from "../assets/Yeezy 500 Blush.webp";
 import BapestaPink from "../assets/BAPESTA PINK.webp";
 import AJ1travisscott from "../assets/Air Jordan 1 x Travis Scott.jpg";
 
-
-export default function Destaques({ filtrarTermo }) {
+export default function Destaques({ filtrarTermo, numeroCliques }) {
   const listaTenis = [
     {
       id: 1,
@@ -35,7 +33,6 @@ export default function Destaques({ filtrarTermo }) {
       preco: "R$ 3.799,91",
       parcelamento: "ou 10x R$ 399,99",
     },
-
 
     {
       id: 3,
@@ -85,13 +82,8 @@ export default function Destaques({ filtrarTermo }) {
     return item.nome.toLowerCase().includes(filtrarTermo.toLowerCase());
   });
 
-
-
-
   return (
     <>
-    
-
       <div className={styleDestaques.Container}>
         <div className={styleDestaques.Carrosel}>
           <Swiper
@@ -116,7 +108,10 @@ export default function Destaques({ filtrarTermo }) {
                     <p className={styleDestaques.Parcelamento}>
                       {dado.parcelamento}
                     </p>
-                    <button  className={styleDestaques.btnCompra}>
+                    <button
+                      onClick={numeroCliques}
+                      className={styleDestaques.btnCompra}
+                    >
                       COMPRAR AGORA
                     </button>
                   </span>

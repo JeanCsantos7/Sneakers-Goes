@@ -10,11 +10,11 @@
 
 .Titulo,
 .Informações,
-.btn, 
-.input
-{
+.btn,
+.input {
   font-family: "Rubik", sans-serif;
 }
+
 .Titulo {
   padding-top: 6%;
   padding: 2.5%;
@@ -30,51 +30,48 @@
   padding: 2%;
 }
 
-.ContainerInput{
-    display: flex;
-    margin-top: 3%;
+.ContainerInput {
+  display: flex;
+  margin-top: 3%;
 }
 
-.input{
-    width: 245px;
-    height: 35px;
-    border: none;
+.input {
+  width: 245px;
+  height: 35px;
+  border: none;
 }
 
-.btn{
- background-color: #fb6a31;
- color: #FFF;
- padding: 3%;
- outline: none;
- border: none;
- cursor: pointer;
+.btn {
+  background-color: #fb6a31;
+  color: #fff;
+  padding: 3%;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
-.btn:hover{
-    background-color: #f7946d;
-    transition: 450 ms ease-in-out;
+.btn:hover {
+  background-color: #f7946d;
+  transition: 450 ms ease-in-out;
 }
 
-
-@media screen and (min-width: 1280px) and (max-width: 1920px){
-
-  .Container{
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+  .Container {
     margin-top: 5%;
     height: 286px;
   }
 
-  .Titulo{
+  .Titulo {
     padding-top: 3%;
     padding: 1.5%;
   }
 
   .Informações {
-    
     padding: 0.7%;
   }
 
-  .ContainerInput{
+  .ContainerInput {
     display: flex;
     margin-top: 1%;
-}
+  }
 }

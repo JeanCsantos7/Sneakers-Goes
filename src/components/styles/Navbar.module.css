@@ -1,6 +1,6 @@
 .Container {
   width: 100%;
-  height: 150px;
+  height: 156px;
   background-color: rgb(15, 15, 15);
 }
 
@@ -29,45 +29,48 @@
 
 input {
   width: 190px;
-  height: 30px;
+  height: 35px;
   outline: none;
+  z-index: 2;
 }
 
 .btnPesquisa {
   cursor: pointer;
-  width: 16%;
-  height: 30px;
+  width: 26px;
+  height: 35px;
   background-color: #fb6a31;
   outline: none;
   border: none;
+  border-radius: 0px;
 }
 
 .iconePesquisa {
   font-size: 12.5px;
   color: #fff;
+  border: none;
+  border-radius: 0px;
 }
 
 .MenuMobile {
   display: none;
-
 }
 
 .CarrinhoCompra {
   cursor: pointer;
-  font-size: 120px;
+  font-size: 156px;
   color: #fb6a31;
 }
 
 .circulo {
   cursor: pointer;
-    position: absolute;
+  position: absolute;
   right: 11.7%;
   top: 9.2%;
   width: 5%;
   height: 18px;
   border-radius: 80px;
   background-color: #fb6a31;
-  color: #fFF;
+  color: #fff;
   text-align: center;
 }
 
@@ -75,7 +78,7 @@ input {
   .MenuMobile {
     display: block;
     cursor: pointer;
-    font-size: 120px;
+    font-size: 125px;
     color: #fb6a31;
   }
 
@@ -84,34 +87,27 @@ input {
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1920px){
- 
- 
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
   .Container {
- 
     height: 175px;
-  
   }
- 
- 
+
   .nav {
-  
     gap: 2%;
     padding: 0.5%;
   }
 
-  
-.Links {
-  font-family: "Rubik", sans-serif;
-  font-weight: bold;
-}
+  .Links {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+  }
 
-.Links:hover {
-  color: #fFF;
-  border-bottom: 2px solid #fb6a31;
-  transition: 450ms ease-in-out;
-}
-  
+  .Links:hover {
+    color: #fff;
+    border-bottom: 2px solid #fb6a31;
+    transition: 450ms ease-in-out;
+  }
+
   .Logotipo {
     width: 22%;
     margin-left: 9%;
@@ -119,39 +115,35 @@ input {
 
   input {
     width: 425px;
-    height: 35px;
-   
+    height: 37px;
   }
 
   .btnPesquisa {
-
-    height: 35px;
-
+    height: 37px;
+    width: 45px;
   }
-  
+
   .iconePesquisa {
     font-size: 14.5px;
-    
   }
 
   .CarrinhoCompra {
-  
     font-size: 35px;
     margin-right: 5%;
   }
 
-
   .circulo {
-  
-
     right: 4.4%;
     top: 9.2%;
     width: 30px;
     height: 30px;
     border-radius: 89px;
-   
-  
   }
 
-
+  .numeroCliques {
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5%;
+  }
 }

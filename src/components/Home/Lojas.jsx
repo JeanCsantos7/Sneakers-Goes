@@ -72,7 +72,6 @@ export default function Lojas({ filtrarTermo }) {
 
       {filtro.map((item) => {
         return (
-          
           <div className={styleLojas.Containers} key={item.id}>
             <div className={styleLojas.cardContainer}>
               <h1 className={styleLojas.TituloCard}>{item.unidade}</h1>
@@ -85,9 +84,7 @@ export default function Lojas({ filtrarTermo }) {
         );
       })}
 
-      {
-        filtro.length === 0 ? <MensagemErro/> :  ''
-      }
+      {filtro.length === 0 ? <MensagemErro /> : ""}
     </>
   );
 }

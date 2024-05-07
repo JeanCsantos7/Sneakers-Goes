@@ -1,26 +1,21 @@
-.Container{
-
-    background-color: #fb6a31;
-    width: 100%;
-    height: 200px;
+.Container {
+  background-color: #fb6a31;
+  width: 100%;
+  height: 200px;
 }
 
-.nav{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-   
-
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.Links{
-    
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: clamp(16px, 18px, 24px);
-    color: #ffffff;
-    text-decoration: none;
-     margin-top: 8%;
+.Links {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(16px, 18px, 24px);
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 8%;
 }

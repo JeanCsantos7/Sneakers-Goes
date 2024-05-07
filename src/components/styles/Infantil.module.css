@@ -1,0 +1,89 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  gap: 8%;
+}
+
+.Titulo {
+  font-family: "Rubik", sans-serif;
+  font-size: 28.5px;
+  margin-top: 5%;
+  text-align: center;
+  color: #fb6a31;
+}
+
+.Informacoes {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1%;
+  text-align: center;
+  color: rgb(15, 15, 15);
+}
+
+.TituloQuantia {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-left: 5%;
+  margin-top: 2%;
+  color: rgb(15, 15, 15);
+}
+
+.ContainerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+
+.ContainerCard:hover {
+  border: 2px solid #fb6a31;
+  transition-duration: 250ms;
+  border-radius: 9px;
+}
+
+.imagemCard {
+  width: 75%;
+}
+
+.Nome,
+.Preco,
+.Parcelamento,
+.btnCompra,
+.TituloVisualizados {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.Nome {
+  font-size: 20px;
+  color: #fb6a31;
+  margin-top: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    flex-direction: column;
+  }
+
+  .Titulo {
+    font-family: "Rubik", sans-serif;
+    font-size: 26.5px;
+    margin-top: 5%;
+    text-align: center;
+    color: #fb6a31;
+  }
+
+  .Informacoes {
+    font-size: 17px;
+    width: 85%;
+  }
+
+  .TituloQuantia {
+    margin-top: 15%;
+  }
+}

@@ -37,7 +37,7 @@ export default function Nike() {
 
   return (
     <>
-     <NavBarV2></NavBarV2>
+      <NavBarV2></NavBarV2>
 
       <h1 className={styleNike.Titulo}>Nike</h1>
 
@@ -167,7 +167,9 @@ export default function Nike() {
       </div>
 
       <h3 className={styleNike.TituloVisualizados}>{textoVisualizacao}</h3>
-      <button onClick={mostrarCards} className={styleNike.VerMais}>{textoBtn}</button>
+      <button onClick={mostrarCards} className={styleNike.VerMais}>
+        {textoBtn}
+      </button>
       <p>{renderizar}</p>
     </>
   );

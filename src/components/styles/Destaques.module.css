@@ -1,18 +1,18 @@
-.Container{
+.Container {
     margin-top: 5%;
-    
+
 }
 
 
-.Titulo{
+.Titulo {
     font-family: "Rubik", sans-serif;
     text-align: center;
-    
+
     color: #fb6a31;
-   font-size: 28.5px;
+    font-size: 28.5px;
 }
 
-.Informacoes{
+.Informacoes {
     font-family: "Montserrat", sans-serif;
     margin-top: 4%;
     text-align: center;
@@ -20,54 +20,59 @@
 }
 
 
-.Carrosel{
+.Carrosel {
     display: flex;
     justify-content: center;
     width: 100%;
     align-items: center;
-    
-  
+
+
     margin-top: 8%;
-   
+
 }
 
-.ContainerCarrosel{
-  
+.ContainerCarrosel {
+
     width: 100%;
-    
-    
+
+
 }
 
-.imagens{
+.imagens {
     width: 100%;
     height: 315px;
-    
+
 }
-.Nome, .Preco, .Parcelamento, .btnCompra{
+
+.Nome,
+.Preco,
+.Parcelamento,
+.btnCompra {
     font-family: "Rubik", sans-serif;
     text-align: center;
 }
-.Nome{
+
+.Nome {
     font-size: 22px;
     color: #fb6a31;
     margin-top: 2%;
 }
 
-.Preco{
-    
+.Preco {
+
     font-weight: 790;
-     margin-top: 2%;
+    margin-top: 2%;
     font-size: 28px;
     color: rgb(15, 15, 15);
 }
 
-.Parcelamento{
+.Parcelamento {
     font-size: 18px;
     margin-top: 1%;
     color: rgb(15, 15, 15);
 }
 
-.btnCompra{
+.btnCompra {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,42 +89,42 @@
     cursor: pointer;
 }
 
-.btnCompra:hover{
-   
+.btnCompra:hover {
+
     background-color: rgb(15, 15, 15);
-    color:  #fb6a31;
+    color: #fb6a31;
     transition: ease-in-out 480ms;
-    
+
 }
 
 
 
-@media screen and (min-width: 1280px) and (max-width: 1920px){
-    .Container{
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+    .Container {
         margin-top: 2%;
-        
+
     }
 
-    .Informacoes{
-        
+    .Informacoes {
+
         margin-top: 1%;
-    
+
     }
 
-    .Carrosel{
+    .Carrosel {
         margin: 0 auto;
         width: 35%;
-      
-        
-      
+
+
+
         margin-top: 5.5%;
-       
+
     }
 
-    .imagens{
+    .imagens {
         width: 95%;
         height: 415px;
-        
+
     }
 
 }

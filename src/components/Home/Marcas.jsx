@@ -1,48 +1,29 @@
-
-
-import styleMarcas from "../styles/Marcas.module.css"
+import styleMarcas from "../styles/Marcas.module.css";
 import { SiJordan } from "react-icons/si";
 import { CgAdidas } from "react-icons/cg";
 import { SiNike } from "react-icons/si";
 import { Link } from "react-router-dom";
 
+export default function Marcas() {
+  return (
+    <>
+      <div className={styleMarcas.Container}>
+        <h1 className={styleMarcas.Titulo}>Marcas</h1>
 
-
-
-export default function Marcas(){
-
-    return(
-        <>
-         <div className={styleMarcas.Container}>
-           <h1 className={styleMarcas.Titulo}>Marcas</h1>
-          
-         <span className={styleMarcas.ContainerMarca}>
-         <Link to={'Jordan'}>
-          <SiJordan className={styleMarcas.LogoMarca}></SiJordan>
+        <span className={styleMarcas.ContainerMarca}>
+          <Link to={"Jordan"}>
+            <SiJordan className={styleMarcas.LogoMarca}></SiJordan>
           </Link>
 
-          
-          <Link to={'Nike'}>
+          <Link to={"Nike"}>
             <SiNike className={styleMarcas.LogoMarca}></SiNike>
-            </Link>
+          </Link>
 
-            <Link to={'Adidas'}>
+          <Link to={"Adidas"}>
             <CgAdidas className={styleMarcas.LogoMarca}></CgAdidas>
-            </Link>
-
-         
-         </span>
-         
-        
-            
-           
-          
-
-         
-          
-        
-         </div>
-        
-        </>
-    )
+          </Link>
+        </span>
+      </div>
+    </>
+  );
 }

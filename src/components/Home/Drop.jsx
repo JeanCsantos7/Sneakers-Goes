@@ -1,29 +1,17 @@
+import React from "react";
 import styleDrop from "../styles/Drop.module.css";
 import NB360 from "../assets/NB360.png";
 import NB860 from "../assets/NB860.png";
 import NB860Blue from "../assets/NB860 BLUE.png";
 import NIKE600 from "../assets/NIKEP600.png";
 import Mizuno from "../assets/Mizuno.png";
-
-
-
-
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-
-export default function Drop({filtrarTermo}) {
-  
-
-
-  
+export default function Drop({ filtrarTermo, numeroCliques }) {
   const listaImagens = [
     {
       id: 1,
@@ -62,67 +50,44 @@ export default function Drop({filtrarTermo}) {
     },
   ];
 
-  const FiltroDrop = listaImagens.filter((filtro) => {
-    return(
-        filtro.Modelo.toLowerCase().includes(filtrarTermo.toLowerCase())
-    )
-  })
-
- 
-
-
-
- 
-
   return (
-
-
-   <>
-      
-     
-     
+    <>
       <div className={styleDrop.Container}>
-     
-        <Swiper
-          modules={[Pagination, Navigation, A11y, Scrollbar]}
-          slidesPerView={1}
-          navigation
-          
-     
-        >
-          {FiltroDrop.map((item) => {
-            return (
-             
-             <SwiperSlide key={item.id}>
-              <h1 className={styleDrop.Titulo}>Drops Disponíveis</h1>
+        <Swiper slidesPerView={1} navigation>
+          {listaImagens
+            .filter((item) =>
+              item.Modelo.toLowerCase().includes(filtrarTermo.toLowerCase())
+            )
+            .map((item) => (
+              <SwiperSlide key={item.id}>
+                <h1 className={styleDrop.Titulo}>Drops Disponíveis</h1>
 
                 <span className={styleDrop.ContainerCard}>
                   <div className={styleDrop.CardLaranja}>
-                    <img className={styleDrop.imagemCard} src={item.imagem} alt="" />
+                    <img
+                      className={styleDrop.imagemCard}
+                      src={item.imagem}
+                      alt=""
+                    />
                   </div>
                   <div className={styleDrop.CardCinza}>
                     <h1 className={styleDrop.TituloCard}>{item.Modelo}</h1>
                     <h2 className={styleDrop.Preco}>{item.valor}</h2>
-                    <p className={styleDrop.Parcelamento}>{item.parcelamento}</p>
-                    <button className={styleDrop.btnCompra}>COMPRAR AGORA</button>
-                   
-                  
-                  
+                    <p className={styleDrop.Parcelamento}>
+                      {item.parcelamento}
+                    </p>
+                    <button
+                      className={styleDrop.btnCompra}
+                      onClick={numeroCliques}
+                    >
+                      COMPRAR AGORA
+                    </button>
                   </div>
                 </span>
               </SwiperSlide>
-            );
-          })}
-
-          {
-            FiltroDrop.length === 0 ? '' : ''
-          }
+            ))}
         </Swiper>
-       
       </div>
-   
-    
-
     </>
   );
 }
