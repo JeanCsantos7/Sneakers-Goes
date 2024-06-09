@@ -94,16 +94,17 @@
   }
 
   .ContainerCard {
-    margin-top: 2%;
+    margin-top: 8%;
   }
 
   .CardLaranja {
-    width: 40%;
+    width: 30%;
     height: 245px;
+   
   }
 
   .CardCinza {
-    width: 40%;
+    width: 30%;
     height: 395px;
     padding: 6.7%;
   }

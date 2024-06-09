@@ -5,6 +5,7 @@
 
 .Containers {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 8%;
@@ -39,19 +40,26 @@ iframe {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
+  
+
+  
   .Container {
     display: flex;
+    
     margin-top: 1%;
   }
 
   .Containers {
     margin: 2%;
+
     margin-top: 2%;
   }
 
   .cardContainer {
-    width: 30%;
+    width: 21%;
     height: 485px;
+ 
+    padding: 3%;
   }
 
   iframe {
